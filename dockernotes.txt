@@ -1,0 +1,139 @@
+## Introduction to Containerization and Docker
+
+### What is containerization?
+
+Containerization is a lightweight form of virtualization that allows you to package an application and its dependencies into a standardized unit called a container.
+
+### Overview of Docker
+
+Docker is a platform that enables developers to build, ship, and run applications as containers. It provides an ecosystem for containerization, simplifying the process of managing and deploying applications.
+
+### Advantages of containerization
+
+- Portability: Containers can run anywhere that supports Docker, ensuring consistent behavior from development to production.
+  
+- Isolation: Each container encapsulates its own environment, preventing conflicts between applications running on the same host.
+
+- Efficiency: Containers share the host operating system kernel, making them lightweight compared to traditional virtual machines.
+
+### What is a Container?
+
+A container is a runtime instance of a Docker image. It encapsulates an application and its dependencies, ensuring consistency across different environments.
+
+### What is a Docker Image?
+
+A Docker image is a read-only template containing instructions to create a Docker container. It includes everything needed to run an application: code, runtime, libraries, and dependencies.
+
+### What is a Docker Registry?
+
+A Docker registry is a storage and distribution service for Docker images. Docker Hub is the default public registry where you can find and share Docker images.
+
+### Docker Architecture Overview
+
+Docker uses a client-server architecture:
+
+- Docker Client: The command-line interface used by users to interact with Docker.
+- Docker Daemon: The background service running on the host system that manages Docker objects (images, containers, networks, volumes).
+
+## Docker Container Manipulation Basics
+
+### How to Run a Container
+
+#bash
+docker run hello-world
+
+
+
+
+# Basic Linux Commands
+
+# Navigate directories:
+cd directory_name  # Change directory to 'directory_name'
+
+# List files and directories:
+ls  # List files and directories in the current directory
+
+# Print working directory:
+pwd  # Print the current working directory path
+
+# Copy files or directories:
+cp source_file destination_directory  # Copy 'source_file' to 'destination_directory'
+
+# Move or rename files or directories:
+mv old_name new_name  # Rename 'old_name' to 'new_name' or move files/directories
+
+# Remove files or directories:
+rm file_name  # Remove 'file_name'
+rm -r directory_name  # Recursively remove 'directory_name' and its contents
+
+# View file content:
+cat file_name  # Output the content of 'file_name'
+
+# Find files by name:
+find directory -name "file_pattern"  # Search 'directory' for files matching "file_pattern"
+
+# View manual pages for commands:
+man command_name  # Display the manual page for 'command_name'
+
+
+# apt Commands
+
+# Update package index:
+ apt update  # Update the local package index
+
+# Install a package:
+ apt install package_name  # Install 'package_name' using apt package manager
+
+# Remove a package:
+ apt remove package_name  # Remove 'package_name' using apt package manager
+
+# Upgrade installed packages:
+ apt upgrade  # Upgrade all installed packages to their latest versions
+
+
+# nano Commands
+
+# Edit or create a file:
+nano file_name  # Open 'file_name' for editing with nano text editor
+
+# Save changes:
+# Press `Ctrl + O`, then Enter.
+
+# Exit nano:
+# Press `Ctrl + X`.
+
+
+# mkdir and touch Commands
+
+# Create a directory:
+mkdir directory_name  # Create a new directory named 'directory_name'
+
+# Create an empty file:
+touch file_name  # Create an empty file named 'file_name'
+
+
+# Docker Commands
+
+# Run a container:
+docker run image_name  # Run a Docker container from 'image_name'
+
+# List running containers:
+docker ps  # List running Docker containers
+
+# List all containers (including stopped ones):
+docker ps -a  # List all Docker containers (running and stopped)
+
+# Build an image from a Dockerfile:
+docker build -t image_name .  # Build a Docker image from a Dockerfile in the current directory
+
+# Push an image to a registry:
+docker push username/image_name  # Push a Docker image to a Docker registry
+
+# Pull an image from a registry:
+docker pull image_name  # Pull a Docker image from a Docker registry
+
+# Remove a container:
+docker rm container_id_or_name  # Remove a Docker container by ID or name
+
+# Remove an image:
+docker rmi image_id_or_name  # Remove a Docker image by ID or name
